@@ -20,10 +20,12 @@
         }
     }
 
-    pares.sort((a, b) => a - b);
-    impares.sort((a, b) => a - b);
+    const paresCrescente = pares.sort((a, b) => a - b);
+    const imparesCrescente = impares.sort((a, b) => a - b);
+    const paresDecrescente = impares.sort((a, b) => a - b);
+    const imparesDecrescente = impares.sort((a, b) => a - b);
 
     //SAÍDA
-    document.write(`NÚMEROS PARES: ${pares.join(", ")}. NÚMEROS ÍMPARES: ${impares.join(", ")}.`)
+    document.write(`NÚMEROS PARES (ordem crescente): ${paresCrescente.join(", ")}. NÚMEROS PARES (ordem decrescente): ${paresDecrescente.join(", ")}. NÚMEROS ÍMPARES (ordem crescente): ${imparesCrescente.join(", ")}. NÚMEROS ÍMPARES (ordem decrescente): ${imparesDecrescente.join(", ")}.`)
 
 </script>
