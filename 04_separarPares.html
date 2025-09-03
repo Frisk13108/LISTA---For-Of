@@ -6,11 +6,21 @@
     //Apresente apenas os números pares. Apresente também a quantidade de números pares que existem e apresente a quantidade de elementos da lista original.
 
     //ENTRADA
-
+    let listaDeItens = [1, "João", "Eduardo", "Joice", 3, 5, 6, 8, "Maria", 5.6, 10];
 
     //PROCESSAMENTO
+    let par = [];
+    let nomes = [];
 
+    for (const pares of listaDeItens) {
+        if (pares % 2 === 0) {
+            par.push(pares);        
+        } else {
+            nomes.push(pares);
+        }
+    }
 
     //SAÍDA
+    document.write(`OS NÚMEROS PARES SÃO: ${par.join(", ")}.`);
 
 </script>
