@@ -27,6 +27,6 @@
     const imparesDecrescente = [...impares].sort((a, b) => b - a);
 
     //SAÍDA
-    document.write(`NÚMEROS PARES (ordem crescente): ${paresCrescente.join(", ")}. NÚMEROS PARES (ordem decrescente): ${paresDecrescente.join(", ")}. NÚMEROS ÍMPARES (ordem crescente): ${imparesCrescente.join(", ")}. NÚMEROS ÍMPARES (ordem decrescente): ${imparesDecrescente.join(", ")}.`)
+    document.write(`NÚMEROS PARES (ordem crescente): ${pares.sort((a, b) => a - b).join(", ")}. NÚMEROS PARES (ordem decrescente): ${pares.sort((a, b) => b - a).join(", ")}. NÚMEROS ÍMPARES (ordem crescente): ${impares.sort((a, b) => a - b).join(", ")}. NÚMEROS ÍMPARES (ordem decrescente): ${impares.sort((a, b) => b - a).join(", ")}.`)
 
 </script>
