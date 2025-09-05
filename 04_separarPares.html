@@ -7,7 +7,6 @@
 
     //ENTRADA
     let listaDeItens = [1, "João", "Eduardo", "Joice", 3, 5, 6, 8, "Maria", 5.6, 10];
-    let listaDois = [1, "João", "Eduardo", "Joice", 3, 5, 6, 8, "Maria", 5.6, 10];
 
     //PROCESSAMENTO
     let par = [];
@@ -21,7 +20,9 @@
         }
     }
 
+    let listaDois = listaDeItens.length;
+
     //SAÍDA
-    document.write(`OS NÚMEROS PARES SÃO: ${par.join(", ")}. EXISTEM ${par.length} NÚMEROS PARES, NA LISTA ORIGINAL HAVIAM ${listaDois.lenght} ITENS.`);
+    document.write(`OS NÚMEROS PARES SÃO: ${par.join(", ")}. EXISTEM ${par.length} NÚMEROS PARES, NA LISTA ORIGINAL HAVIAM ${listaDois} ITENS.`);
 
 </script>
