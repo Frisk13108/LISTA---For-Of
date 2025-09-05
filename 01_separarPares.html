@@ -13,10 +13,10 @@
     let impar = [];
 
     for (let parImpar of listaDeNumeros) {
-        if (Number.isInteger(listaDeNumeros%2)) {
-            par.push(listaDeNumeros);
+        if ((parImpar%2) == 0) {
+            par.push(parImpar);
         } else {
-            impar.push(listaDeNumeros);
+            impar.push(parImpar);
         }
     }
 
@@ -24,6 +24,6 @@
     impar.sort((a, b) => a - b);
 
     //SAÍDA
-    document.write(`${par.join(", ")} || ${impar.join(", ")}`);
+    document.write(`${par.join(", ")}`);
 
 </script>
