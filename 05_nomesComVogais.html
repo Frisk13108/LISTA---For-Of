@@ -10,9 +10,10 @@
 
     //PROCESSAMENTO
     let nomesComVogal = [];
-    let nomes
+    let nomes = [];
+    
     for (let vogal of listaDeNomes) {
-        if (vogal.indexOf(`A` || `E` || `I` || `O` || `U`) == 1) {
+        if (vogal.indexOf(`A`) == 0 || vogal.indexOf(`E`) == 0 || vogal.indexOf(`I`) == 0 || vogal.indexOf(`O`) == 0 || vogal.indexOf(`U`) == 0) {
             nomesComVogal.push(vogal);
         } else {
             nomes.push(vogal);

@@ -13,17 +13,18 @@
     let impares = [];
 
     for (let parImpar of listaDeNumeros) {
-        if (Number.isInteger(parImpar % 2)) {
+        if ((parImpar % 2) == 0) {
             pares.push(parImpar);
         } else {
             impares.push(parImpar);
         }
     }
 
-    const paresCrescente = pares.sort((a, b) => a - b);
-    const imparesCrescente = impares.sort((a, b) => a - b);
-    const paresDecrescente = impares.sort((a, b) => a - b);
-    const imparesDecrescente = impares.sort((a, b) => a - b);
+    const paresCrescente = [...pares].sort((a, b) => a - b);
+    const imparesCrescente = [...impares].sort((a, b) => a - b);
+
+    const paresDecrescente = [...pares].sort((a, b) => b - a);
+    const imparesDecrescente = [...impares].sort((a, b) => b - a);
 
     //SAÍDA
     document.write(`NÚMEROS PARES (ordem crescente): ${paresCrescente.join(", ")}. NÚMEROS PARES (ordem decrescente): ${paresDecrescente.join(", ")}. NÚMEROS ÍMPARES (ordem crescente): ${imparesCrescente.join(", ")}. NÚMEROS ÍMPARES (ordem decrescente): ${imparesDecrescente.join(", ")}.`)
